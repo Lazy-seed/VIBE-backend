@@ -17,7 +17,8 @@ app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json({ extended: true }))
 
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }))
+app.use(cors({ credentials: true, origin: 'https://vibe77.netlify.app' }))
+// app.use(cors({ credentials: true, origin: 'http://localhost:3000' }))
 // app.use(cors({ credentials: true, origin: 'http://192.168.0.197:3000' }))
 const PORT = 8000;
 
