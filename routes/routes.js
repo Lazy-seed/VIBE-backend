@@ -1,7 +1,7 @@
 import express from 'express';
 import { login, logout, register, userInfo, userUpdate } from '../controller/user_controller.js';
 import { Auth } from '../middleware/auth.js';
-import { addsong, allsongs, chngCatg, getOneSong,SongsByCtg } from '../controller/song_controller.js';
+import { addsong, allsongs, chngCatg, getOneSong,SearchSong,SongsByCtg } from '../controller/song_controller.js';
 
 
 const route=express.Router();
@@ -12,6 +12,7 @@ route.post('/addSong',addsong)
 route.get('/allSongs',allsongs)
 route.get('/SongsByCtg/:catg/:playlist',SongsByCtg)
 route.get('/getOneSong/:song_id',getOneSong)
+route.get('/searchSong/:srch',SearchSong)
 
 
 
