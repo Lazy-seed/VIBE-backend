@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 
 
 
-const mongoose_URL = 'mongodb+srv://aryan:aryan@cluster1.alqtnoa.mongodb.net/vibe?retryWrites=true&w=majority'
+const mongoose_URL = 'mongodb+srv://none:none@cluster1.alqtnoa.mongodb.net/vibe?retryWrites=true&w=majority'
 const DB_connection = () => {
     mongoose.connect(mongoose_URL, {});
     mongoose.connection.on('connected', () => { console.log("db is connected"); })
